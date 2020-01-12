@@ -1,4 +1,4 @@
-import requests
+cimport requests
 from bs4 import BeautifulSoup
 
 session = requests.Session()
@@ -20,7 +20,6 @@ def auth(login, password):
 login = str(input('Input your login : '))
 password = str(input('Input your password : '))
 
-# auth('aleksandra.grinina@mail.ru', 'Fixprice123')
 if not login == '' and not password == '':
 	auth(login, password)
 	print('Wait...')
